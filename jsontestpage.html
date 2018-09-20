@@ -7,7 +7,7 @@
 <script>
 
 var actualinfo = new XMLHttpRequest();
-actualinfo.open('GET', href="first attempt.json");
+actualinfo.open('GET', 'first attempt.json');
 var prinny = JSON.parse(actualinfo);
 document.getElementById("output").innerHTML = prinny.firstinfo;
 //actualinfo.responseType = 'json';
