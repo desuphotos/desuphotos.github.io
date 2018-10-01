@@ -5,13 +5,17 @@
 <p id="output"></p>
 
 <script>
-
-var actualinfo = new XMLHttpRequest();
-actualinfo.open('GET', http://loli.photography/firstattempt.json);
-var prinny = JSON.parse(actualinfo);
-document.getElementById("output").innerHTML = prinny.firstinfo;
-//actualinfo.responseType = 'json';
-//actualinfo.send();
+    
+    var xhr = new XMLHttpRequest();
+    xhr.open( 'GET', 'firstattempt.json' , true);
+    xhr.onload = function() {
+        if (xhr.status==200){
+            seeme = JSON.parse(xhr.responseText);
+            var prinny = '';
+            prinny = seeme.var1;
+            document.getElementById(output).innerHTML = prinny;
+        }
+    }
 
 
 </script>

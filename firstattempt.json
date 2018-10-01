@@ -1,9 +1,4 @@
-
-{"infodump":[
-        {
-        "firstinfo" : "ehjfa",
-        "secondinfo" : "hgksfds",
-        "thirdinfo" : "hskadha"
-        }
-    ]
+{
+    "var1" : "hello",
+    "var2" : "fuck you"
 }
