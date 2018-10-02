@@ -2,13 +2,9 @@
 <html>
 <body>
 
-<p id="output">Check</p>
-<button type="button" onclick = 'document.getElementById(output).innerHTML = "retard"'> oh man
-    </button>
+<p id="output"></p>
 
-    
 <script>
-    
     
     var xhr = new XMLHttpRequest();
     xhr.open( 'GET', 'firstattempt.json' , true);
@@ -17,7 +13,7 @@
             seeme = JSON.parse(xhr.responseText);
             var prinny = '';
             prinny = seeme.var1;
-            document.getElementById(output).innerHTML = prinny;
+            document.getElementById("output").innerHTML = prinny;
         }
     }
 
